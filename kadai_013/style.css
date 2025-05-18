@@ -81,6 +81,11 @@ PC用のスタイル
     }
 
     #menu-sp {
+        position: absolute; /* 位置を固定 */
+        top: 15px; /* 位置を調整 */
+        right: 20px; /* 右端に配置 */
+        width: 40px; /* 適切なサイズに調整 */
+        height: auto;
         float: right;
         padding: 0;
         display: block; /* ハンバーガーメニューを表示 */
@@ -95,6 +100,7 @@ PC用のスタイル
         width: 100%;
         display: none; /* 初期状態では非表示 */
         z-index: 100;
+        padding-top: 60px; /* メニューの上部に余白を追加 */
     }
 
     #nav-sp ul {
@@ -129,7 +135,9 @@ PC用のスタイル
 
     #nav-sp a:link,
     #nav-sp a:visited,
-    #nav-sp a:hover,
+    #nav-sp a:hover {
+        text-decoration: underline;/*ホバー時に下線を表示*/
+    }
     #nav-sp a:active {
         color: #ffffff;
         text-decoration: underline;
